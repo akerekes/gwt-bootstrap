@@ -15,24 +15,24 @@
  */
 package com.github.gwtbootstrap.client.ui;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 import com.github.gwtbootstrap.client.ui.constants.Constants;
-import com.github.gwtbootstrap.client.ui.resources.Bootstrap;
+import com.googlecode.gwt.test.GwtModule;
 import com.googlecode.gwt.test.GwtTest;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 
 /**
  * This is {@link Abbreviation}Test.
  * @author ohashi keisuke
  */
+@GwtModule("com.github.gwtbootstrap.Bootstrap")
 public class AbbreviationTest extends GwtTest {
-
-	public String getModuleName() {
-		return "com.github.gwtbootstrap.Bootstrap";
-	}
 
 	/**
 	 * test for Constractor {@link Abbreviation#Abbreviation(String, String)}
